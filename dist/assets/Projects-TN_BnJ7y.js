@@ -1,0 +1,1 @@
+import{P as e,a as t}from"./ProjectsGrid-BORFqDar.js";import"./index-C_QkVQxY.js";import"./ui-project-2-B89WGbom.js";const o=()=>React.createElement(e,null,React.createElement("div",{className:"container mx-auto"},React.createElement(t,null)));export{o as default};
