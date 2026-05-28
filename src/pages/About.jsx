@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import profileImg from "../assets/profile.jpg";
+import profileImg from "../assets/profile2.jpg";
 import {
   SiHtml5,
   SiCss3,
@@ -14,6 +14,10 @@ import {
   SiGithub,
   SiFirebase,
   SiFigma,
+  SiMongodb,
+  SiExpress,
+  SiNodedotjs,
+  SiShadcnui,
 } from "react-icons/si";
 
 const About = () => {
@@ -23,13 +27,17 @@ const About = () => {
     { name: "JavaScript", icon: SiJavascript, color: "text-yellow-400" },
     { name: "TypeScript", icon: SiTypescript, color: "text-blue-500" },
     { name: "React", icon: SiReact, color: "text-cyan-500" },
-    { name: "Next.js", icon: SiNextdotjs, color: "text-black" },
+    { name: "Next.js", icon: SiNextdotjs, color: "text-blue" },
     { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-teal-500" },
+    { name: "Shadcn UI", icon: SiShadcnui, color: "text-blue" },
     { name: "Bootstrap", icon: SiBootstrap, color: "text-purple-600" },
     { name: "Git", icon: SiGit, color: "text-orange-600" },
-    { name: "GitHub", icon: SiGithub, color: "text-black" },
+    { name: "GitHub", icon: SiGithub, color: "text-blue" },
     { name: "Firebase", icon: SiFirebase, color: "text-orange-500" },
     { name: "Figma", icon: SiFigma, color: "text-pink-500" },
+    { name: "MongoDB", icon: SiMongodb, color: "text-green-600" },
+    { name: "Express.js", icon: SiExpress, color: "text-gray-700" },
+    { name: "Node.js", icon: SiNodedotjs, color: "text-green-700" },
   ];
 
   return (
@@ -61,7 +69,7 @@ const About = () => {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4 }}
-              className="relative"
+              className="relative "
             >
               <div className="aspect-square rounded-2xl overflow-hidden bg-card border border-border/50 shadow-lg">
                 <img
@@ -80,39 +88,39 @@ const About = () => {
               transition={{ delay: 0.6 }}
               className="space-y-6"
             >
-              <h3 className="text-2xl mt-5 font-semibold">
-                Front-End Developer
-              </h3>
+              {/* <h3 className="text-2xl mt-5 font-semibold">
+                MERN Stack Developer
+              </h3> */}
               <p className="text-muted-foreground">
-                I’m Muhammad Mubashir, a passionate front-end developer focused
-                on building responsive and accessible web interfaces. My journey
-                into web development began through self-learning and later
-                advanced with hands-on training at SMIT (Saylani Mass IT
-                Training), where I honed my skills in HTML, CSS, JavaScript, and
-                React.js. I’ve built a variety of projects, including a
-                Foodpanda clone, a Netflix clone, and several responsive landing
-                pages. These experiences helped me develop a strong
-                understanding of real-world UI challenges, performance
-                optimization, and writing clean, reusable code.
+                Hi, I’m Muhammad Mubashir — a MERN Stack and Frontend Developer
+                who enjoys building clean, responsive, and user-friendly web
+                interfaces. I started my journey through self-learning, then
+                strengthened my skills through my DIT diploma and MERN Stack
+                training. Since then, I’ve been consistently practicing by
+                building small to mid-level projects to improve my understanding
+                of real development workflows.
               </p>
               <p className="text-muted-foreground">
-                My current focus is on building dynamic web applications using
-                tools like Tailwind CSS, Git, Firebase, and modern JavaScript
-                libraries. I take pride in transforming ideas into functional
-                and visually appealing products that work seamlessly across
-                devices. I thrive in environments where continuous learning,
-                feedback, and collaboration are encouraged. Currently, I’m
-                actively seeking an internship opportunity where I can apply my
-                skills, grow with a team, and contribute to meaningful digital
-                solutions.
+                On the frontend, I work with React.js, Next.js, TypeScript,
+                Tailwind CSS, Redux Toolkit, React Context, and Shadcn UI. I
+                enjoy creating clean UI components, managing state efficiently,
+                and designing smooth experiences that work well across devices
               </p>
-              <a
-                href="/resume.pdf"
-                download
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:opacity-90 transition-all duration-300 hover:scale-105"
-              >
-                Download Resume
-              </a>
+              <p className="text-muted-foreground">
+                On the backend, I use Node.js, Express.js, MongoDB, and Firebase
+                to build APIs, handle authentication, and manage data. Most of
+                the projects I’ve built so far are self-practice projects, but
+                each one has helped me understand real-world concepts like
+                reusable components, routing, API integration, and performance
+                basics.
+              </p>
+              <p className="text-muted-foreground">
+                I have completed my Intermediate, earned a DIT diploma,
+                completed my MERN Stack program, and I’m currently pursuing BSc
+                AD-Science. I’m now looking for my first internship opportunity,
+                where I can apply what I’ve learned, gain practical experience,
+                and grow by working with a real development team.
+              </p>
             </motion.div>
           </div>
 
