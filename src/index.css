@@ -83,7 +83,7 @@
   --card-foreground: oklch(0.98 0 0);
   --popover: oklch(0.15 0 0);
   --popover-foreground: oklch(0.98 0 0);
-  --primary: oklch(0.6 0.2 250);
+  --primary: oklch(0.6 0.2 250);              /* oklch(0.6 0.2 250)*/
   --primary-foreground: oklch(0.98 0 0);
   --secondary: oklch(0.2 0 0);
   --secondary-foreground: oklch(0.98 0 0);
@@ -205,4 +205,27 @@
 
 .dark .hover\:shadow-lg:hover {
   @apply shadow-primary/20;
+}
+
+/* Light Mode Button Text Color on Hover */
+html:not(.dark) button.bg-foreground:hover {
+  color: white !important;
+}
+
+html:not(.dark) button.bg-foreground:hover * {
+  color: white !important;
+}
+
+/* Light Mode Link Button (a tags styled as buttons) */
+html:not(.dark) a.bg-foreground:hover {
+  color: white !important;
+}
+
+html:not(.dark) a.bg-foreground:hover * {
+  color: white !important;
+}
+
+/* Projects page hover state for Code button */
+html:not(.dark) a:where(.border-border):hover {
+  color: white !important;
 }

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import emailjs from "emailjs-com"; // 👈 add this on top
+import emailjs from "emailjs-com"; 
 import { Mail, Phone, MapPin, Send, Github, Linkedin } from "lucide-react";
 
 function isValidEmail(email) {
@@ -226,7 +226,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:opacity-90 transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-foreground text-secondary font-medium hover:opacity-90 transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     "Sending..."

@@ -8,7 +8,7 @@ const Hero = () => {
       {/* Left: Text */}
       <div className="flex-1 flex flex-col items-start gap-6">
         <h1 className="text-4xl md:text-center md:text-5xl font-bold text-left leading-tight">
-          HI, I Am M.Mubashir
+          HI, I Am M.Mubashir 
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground font-medium">
           A Front-End Developer 

@@ -1,7 +1,8 @@
-// import React, { useState } from "react";
 import image1 from "../assets/port1.png";
-import image3 from "../assets/port3.png";
 import image2 from "../assets/port2.png";
+import image3 from "../assets/port3.png";
+import image4 from "../assets/Foodpanda_clone.png";
+
 import { Link } from "react-router-dom";
 import { ExternalLink, Github } from "lucide-react";
 
@@ -25,7 +26,8 @@ const projectData = [
     imageUrl: image2,
     slug: "ecommerce-website",
     liveUrl: "https://curd-react-00.netlify.app/",
-    githubUrl: "https://github.com/CodeCrafter-MMB/curd-React-Project/tree/main",
+    githubUrl:
+      "https://github.com/CodeCrafter-MMB/curd-React-Project/tree/main",
     description:
       "A full-featured e-commerce platform with product management, cart functionality, and user authentication.",
     technologies: ["React", "Firebase", "Tailwind CSS"],
@@ -41,6 +43,18 @@ const projectData = [
     description:
       "A responsive clone of Audi's website showcasing modern car models with interactive features.",
     technologies: ["React", "Tailwind CSS", "JavaScript"],
+  },
+  {
+    id: 4,
+    title: "Foodpanda_UIClone",
+    type: "Web Application",
+    imageUrl: image4,
+    slug: "Food Delivery Website",
+    liveUrl: "https://foodpandauiclone.netlify.app/",
+    githubUrl: "https://github.com/CodeCrafter-MMB/Foodpanda--Clone",
+    description:
+      "A responsive clone of Audi's website showcasing modern car models with interactive features.",
+    technologies: ["HTML", "CSS"],
   },
 ];
 
@@ -95,7 +109,7 @@ const Projects = () => {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground hover:opacity-90 transition-all duration-300"
+                      className="flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-foreground text-background hover:opacity-90 transition-all duration-300 hover:text-blue-400"
                     >
                       <ExternalLink className="w-4 h-4" />
                       Live Demo
@@ -104,7 +118,7 @@ const Projects = () => {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center gap-2 px-4 py-2 rounded-lg border border-border hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                      className="flex items-center justify-center gap-2 px-4 py-2 rounded-lg border border-border hover:bg-foreground hover:text-primary transition-all duration-300"
                     >
                       <Github className="w-4 h-4" />
                       Code
